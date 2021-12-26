@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- See http://phpunit.de/manual/3.7/en/appendixes.configuration.html -->
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" colors="true"
+         convertWarningsToExceptions="true" convertNoticesToExceptions="true" convertErrorsToExceptions="true"
+         processIsolation="false" stopOnError="false" stopOnFailure="false" stopOnIncomplete="false"
+         stopOnSkipped="false" stopOnRisky="false"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.5/phpunit.xsd">
+    <coverage/>
+
+    <logging>
+    </logging>
+
+    <php>
+        <ini name="error_reporting" value="-1"/>
+    </php>
+
+
+    <testsuites>
+        <testsuite name="WDDX Test Suite">
+            <directory suffix=".php">test</directory>
+        </testsuite>
+    </testsuites>
+
+</phpunit>
